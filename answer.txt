@@ -20,7 +20,7 @@
    unary
    binary
    ternary
-   image
+   im [label="image"]
    pi [label="pre-image"]
    floor
    ceiling
@@ -102,4 +102,4 @@
    gh [label="The Godel hash can be found by"]
    soth [label="The size of the Godel hash can be"]
    ghatfsupo [label="The way a Godel hash accelerates testing for subsumptions under partial order is"]
- }
+}
