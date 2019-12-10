@@ -114,33 +114,8 @@
     </style>
 </head>
 <body>
-<pre id="editor">digraph G {
-
-  subgraph cluster_0 {
-    style=filled;
-    color=lightgrey;
-    node [style=filled,color=white];
-    a0 -> a1 -> a2 -> a3;
-    label = "process #1";
-  }
-
-  subgraph cluster_1 {
-    node [style=filled];
-    b0 -> b1 -> b2 -> b3;
-    label = "process #2";
-    color=blue
-  }
-  start -> a0;
-  start -> b0;
-  a1 -> b3;
-  b2 -> a3;
-  a3 -> a0;
-  a3 -> end;
-  b3 -> end;
-
-  start [shape=Mdiamond];
-  end [shape=Msquare];
-}</pre>
+<pre id="editor">
+</pre>
 <div id="options">
     <label id="engine">
         Engine:
@@ -189,6 +164,17 @@
 
 <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
+loadDoc();
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("editor").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "answer.txt", true);
+  xhttp.send();
+}
   (function (document) {
     //http://stackoverflow.com/a/10372280/398634
     window.URL = window.URL || window.webkitURL;
