@@ -1,0 +1,12 @@
+ digraph {
+    rankdir="LR"
+    gsplines=true
+    Languages -> Grammars [label="6"]
+    Trees -> Graphs [label="5"]
+    NT [label="Number Theory"]
+    PR [label="Number Practice"]
+    NT -> PR [label="4"]
+    Combinatorics -> Probability [label="3"]
+    Functions -> Relations [label="2"]
+    Sets -> Logic [label="1"]
+ }
