@@ -1,1 +1,142 @@
+ digraph {
+   rankdir="LR"
+   splines=ortho
+   overlap=false
+ 
+   CS [label="Countable Set"]
+   function
+   domain
+   codomain
+   range
+   onto
+   surjective
+   surjection
+   oto [label="one-to-one"]
+   injective
+   bijective
+   recursive
+   arguments
+   arity
+   kary [label="k-ary function"]
+   unary
+   binary
+   ternary
+   im [label="image"]
+   pi [label="pre-image"]
+   floor
+   ceiling
+   inverse
+   predicate
+   ud [label="universe of discourse"]
+   uq [label="universal quantifier"]
+   eq [label="existential quantifier"]
+   CP [label="Cartesian Product"]
+   br1 [label="A binary relation from a set A to a set B"]
+   br2 [label="A binary relation R on a set A (a self relation)"]
+   xRy
+   Reflexive
+   Symmetric
+   Antisymmetric
+   Transitive
+   er [label="Equivalence relation"]
+   cong [label="Congruence mod m"]
+   rs [label="Z_n residue set"]
+   po [label="Partial Order"]
+   Poset
+   Permutation
+   Combination
+   PS [label="Probability Space"]
+   Event
+   CPFGE [label="The conditional probability of F given E"]
+   BT [label="Bayes' Theorem"]
+   Multichoosing
+   adb [label="a | b"]
+   tdt [label="The Division Theorem"]
+   p [label="prime(n) in first-order logic"]
+   FToA [label="Fundamental Theorem of Arithmetic"]
+   RLE
+   GCD [label="Greatest Common Divisor (gcd a b)"]
+   LCM [label="Least Common Multiple (lcm a b)"]
+   coprime
+   CRT [label="The Chinese Remainder Theorem"]
+   RSAP [label="The RSA Cryptosystem's eight players"]
+   ifp [label="The difficulty of the integer factorization problem"]
+   d [label="RSA decryption (given n factors and e)"]
+   me [label="Modular exponentiation"]
+   FLT [label="Fermat's Little Theorem"]
+   Tf [label="Totient function"]
+   t [label="A totative of n"]
+   EE [label="The encryption exponent"]
+   DE [label="The decryption exponent"]
+   M [label="Message to encrypt"]
+   Tpp [label="Totient of a prime p"]
+   cc [label="In a cons cell"]
+   trees
+   rt [label="A rooted tree is"]
+   leaf
+   ln [label="The level of a node is"]
+   cn [label="The number of children a node has is"]
+   hnbb [label="A tree of height n and a branching factor b can have"]
+   nkcn [label="The number of key comparisons necessary to find a key in a binary search tree is"]
+   fbt [label="A full binary tree with n leaves always has"]
+   cbt [label="A complete binary tree"]
+   ht [label="A Huffman tree is"]
+   compg [label="A complete graph is"]
+   cg [label="A cycle graph is one with n > 2 nodes where"]
+   ciag [label="A cycle in a graph is"]
+   wg [label="A wheel graph is created by"]
+   idoan [label="In a directed graph, the in-degree of a node is"]
+   odoan [label="In a directed graph, the out-degree of a node is"]
+   don [label="In a graph, the degree of a node"]
+   anaca [label="Adjacent, neighbors and connected are"]
+   Ugr [label="Undirected graphs represent"]
+   iammtol [label="In a multigraph, more than one link"]
+   iasg [label="In a simple graph, there cannot be"]
+   istcb [label="In pseudographs, there can be"]
+   Idg [label="In directed graphs, the relation between nodes"]
+   Idm [label="In directed multigraphs"]
+   Ncg [label="N-cube graphs are defined"]
+   Iimgs [label="In its most general sense, a language is"]
+   a [label="alphabet"]
+   soaa [label="string"]
+   gh [label="How a Godel Hash is made"]
+   soth [label="Godel Hash Size"]
+   ghatfsupo [label="The way a Godel hash accelerates testing for subsumptions under partial order is"] 
+   
+   1 [label="p"]
+   2 [label="q"]
+   3 [label="n"]
+   4 [label="t"]
+   5 [label="e"]
+   6 [label="d"]
+   7 [label="m"]
+   8 [label="c"]
+   
+   domain -> codomain [label="produces" len=2]
+   range -> codomain [label="subset of" len=2]
+   surjective -> range [label="true iff this eq codomain" len=2]
+   surjective -> codomain [label="true iff this eq range" len=2]
+   surjective -> onto [dir=both label="synonyms" len=2]
+   surjection -> surjective [label="noun" len=2]
+   
+   injective -> oto [dir=both label="synonyms" len=2]
 
+   gh -> soth [label="reason for" len=3]
+   soaa -> a [label="subset" len=3]
+   
+   floor -> ceiling [dir=both label="integer rounding" len=2]
+   
+   
+   RSAP -> 1
+   RSAP -> 2
+   RSAP -> 3
+   RSAP -> 4
+   RSAP -> 5
+   RSAP -> 6
+   RSAP -> 7
+   RSAP -> 8
+   
+   
+   
+   
+ }
