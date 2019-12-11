@@ -112,19 +112,19 @@
    7 [label="m"]
    8 [label="c"]
    
-   domain -> codomain [label="produces" len=2]
-   range -> codomain [label="subset of" len=2]
-   surjective -> range [label="true iff this eq codomain" len=2]
-   surjective -> codomain [label="true iff this eq range" len=2]
-   surjective -> onto [dir=both label="synonyms" len=2]
-   surjection -> surjective [label="noun" len=2]
+   domain -> codomain [/*label="produces"*/ len=2]
+   range -> codomain [/*label="subset of"*/ len=2]
+   surjective -> range [/*label="true iff this eq codomain"*/ len=2]
+   surjective -> codomain [/*label="true iff this eq range"*/ len=2]
+   surjective -> onto [dir=both /*label="synonyms"*/ len=2]
+   surjection -> surjective [/*label="noun"*/ len=2]
    
-   injective -> oto [dir=both label="synonyms" len=2]
+   injective -> oto [dir=both /*label="synonyms"*/ len=2]
 
-   gh -> soth [label="reason for" len=3]
-   soaa -> a [label="subset" len=3]
+   gh -> soth [/*label="reason for"*/ len=3]
+   soaa -> a [/*label="subset"*/ len=3]
    
-   floor -> ceiling [dir=both label="integer rounding" len=2]
+   floor -> ceiling [dir=both /*label="integer rounding"*/ len=2]
    
    
    RSAP -> 1
@@ -136,7 +136,16 @@
    RSAP -> 7
    RSAP -> 8
    
+   function -> domain
+   function -> range
+   function -> codomain
+   function -> surjective
+   function -> injective
+   function -> bijective
    
+   function -> arguments
+
+   7 -> M
    
    
  }
