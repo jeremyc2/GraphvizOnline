@@ -1,7 +1,7 @@
  digraph {
    rankdir="LR"
    gsplines=true
-    
+ 
    CS [label="Countable Set"]
    function
    domain
@@ -46,7 +46,7 @@
    Combination
    PS [label="Probability Space"]
    Event
-   CP [label="The conditional probability of F given E"]
+   CPFGE [label="The conditional probability of F given E"]
    BT [label="Bayes' Theorem"]
    Multichoosing
    adb [label="a | b"]
@@ -57,7 +57,6 @@
    GCD [label="Greatest Common Divisor (gcd a b)"]
    LCM [label="Least Common Multiple (lcm a b)"]
    coprime
-   FLT [label="Fermat's Little Theorem"]
    CRT [label="The Chinese Remainder Theorem"]
    RSAP [label="The RSA Cryptosystem's eight players are"]
    ifp [label="The difficulty of the integer factorization problem"]
@@ -71,7 +70,7 @@
    M [label="Message to encrypt"]
    Tpp [label="Totient of a prime p"]
    cc [label="In a cons cell"]
-   t [label="Trees are"]
+   trees
    rt [label="A rooted tree is"]
    l [label="A leaf is"]
    ln [label="The level of a node is"]
@@ -81,7 +80,7 @@
    fbt [label="A full binary tree with n leaves always has"]
    cbt [label="A complete binary tree"]
    ht [label="A Huffman tree is"]
-   cg [label="A complete graph is"]
+   compg [label="A complete graph is"]
    cg [label="A cycle graph is one with n > 2 nodes where"]
    ciag [label="A cycle in a graph is"]
    wg [label="A wheel graph is created by"]
@@ -101,5 +100,5 @@
    soaa [label="A string over an alphabet is a"]
    gh [label="The Godel hash can be found by"]
    soth [label="The size of the Godel hash can be"]
-   ghatfsupo [label="The way a Godel hash accelerates testing for subsumptions under partial order is"]
-}
+   ghatfsupo [label="The way a Godel hash accelerates testing for subsumptions under partial order is"]   
+ }
