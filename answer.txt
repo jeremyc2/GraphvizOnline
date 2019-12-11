@@ -1,7 +1,20 @@
  digraph {
+     
+   /************************************************
+   *
+   *    SETTINGS - SETTINGS - SETTINGS
+   *
+   ************************************************/
+   
    rankdir="LR"
    splines=ortho
    overlap=false
+   
+   /************************************************
+   *
+   *    NODES - NODES - NODES
+   *
+   ************************************************/
  
    CS [label="Countable Set"]
    function
@@ -111,6 +124,12 @@
    6 [label="d"]
    7 [label="m"]
    8 [label="c"]
+   
+   /************************************************
+   *
+   *    CONNECTIONS - CONNECTIONS - CONNECTIONS
+   *
+   ************************************************/
    
    domain -> codomain [/*label="produces"*/ len=2]
    range -> codomain [/*label="subset of"*/ len=2]
