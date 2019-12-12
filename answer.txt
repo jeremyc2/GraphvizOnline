@@ -216,5 +216,12 @@
   binary -> kary
   ternary -> kary
   
+  crt -> tdt
+  
+  adb -> tdt
+  adb -> gcd
+  
+  floor -> tdt
+  ceiling -> tdt
    
  }
