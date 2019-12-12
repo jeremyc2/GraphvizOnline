@@ -93,7 +93,7 @@
    nkcn [label="the number of key comparisons necessary to find a key in a binary search tree is"]
    fbt [label="a full binary tree with n leaves always has"]
    cbt [label="a complete binary tree"]
-   ht [label="a huffman tree is"]
+   ht [label="huffman tree"]
    compg [label="a complete graph is"]
    cg [label="a cycle graph is one with n > 2 nodes where"]
    ciag [label="a cycle in a graph is"]
@@ -154,6 +154,8 @@
   rsap -> 6
   rsap -> 7
   rsap -> 8
+  
+  function -> rsap
    
   function -> domain
   function -> range
@@ -195,9 +197,24 @@
   
   tf -> 4
   
-  cpfge -> cpfge
+  cpfge -> bt
   
-   ud -> uq
-   ud -> eq
+  ud -> uq
+  ud -> eq
+  
+  pi -> im
+ 
+  function -> im
+  function -> pi
+  function -> reflexive
+  
+  bt -> event
+  
+  ht -> t
+  
+  unary -> kary
+  binary -> kary
+  ternary -> kary
+  
    
  }
