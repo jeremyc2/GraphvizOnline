@@ -91,7 +91,7 @@
    cn [label="the number of children a node has is"]
    hnbb [label="a tree of height n and a branching factor b can have"]
    nkcn [label="the number of key comparisons necessary to find a key in a binary search tree is"]
-   fbt [label="a full binary tree with n leaves always has"]
+   fbt [label="a full binary tree"]
    cbt [label="a complete binary tree"]
    ht [label="huffman tree"]
    compg [label="a complete graph is"]
@@ -109,7 +109,7 @@
    idg [label="in directed graphs, the relation between nodes"]
    idm [label="in directed multigraphs"]
    ncg [label="n-cube graphs are defined"]
-   iimgs [label="in its most general sense, a language is"]
+   iimgs [label="language"]
    a [label="alphabet"]
    soaa [label="string"]
    gh [label="how a godel hash is made"]
@@ -155,6 +155,8 @@
   rsap -> 7
   rsap -> 8
   
+  rsap -> ifp
+  
   function -> rsap
    
   function -> domain
@@ -168,6 +170,9 @@
   function -> recursive
    
   function -> arguments
+  function -> predicate
+  
+  predicate -> ps
 
   7 -> m
  
@@ -210,8 +215,9 @@
   
   bt -> event
   
-  ht -> t
+  ht -> trees
   
+  arity -> kary
   unary -> kary
   binary -> kary
   ternary -> kary
@@ -223,5 +229,31 @@
   
   floor -> tdt
   ceiling -> tdt
-   
+  
+  cc -> fbt
+  cc -> cbt
+  fbt -> cbt [dir=both]
+  
+  ud -> ps
+  
+  permutation -> combination [dir=both]
+  permutation -> ps
+  combination -> ps
+  multichoosing -> ps
+  
+  5 -> coprime
+  4 -> coprime
+  
+  rle -> ht
+  
+  ht -> soaa
+  
+  a -> iimgs
+  
+  cc -> ht
+  
+  me -> crt
+  me -> flt
+  
+  me -> 3
  }
