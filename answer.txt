@@ -17,6 +17,7 @@
    ************************************************/
  
    cs [label="countable set"]
+   relation
    function
    domain
    codomain
@@ -53,9 +54,7 @@
    transitive
    er [label="equivalence relation"]
    cong [label="congruence mod m"]
-   rs [label="z_n residue set"]
    po [label="partial order"]
-   poset
    permutation
    combination
    ps [label="probability space"]
@@ -65,7 +64,6 @@
    multichoosing
    adb [label="a | b"]
    tdt [label="the division theorem"]
-   p [label="prime(n) in first-order logic"]
    ftoa [label="fundamental theorem of arithmetic"]
    rle
    gcd [label="greatest common divisor (gcd a b)"]
@@ -78,7 +76,6 @@
    me [label="modular exponentiation"]
    flt [label="fermat's little theorem"]
    tf [label="totient function"]
-   t [label="a totative of n"]
    ee [label="the encryption exponent"]
    de [label="the decryption exponent"]
    m [label="message to encrypt"]
@@ -88,33 +85,24 @@
    rt [label="a rooted tree is"]
    leaf
    ln [label="the level of a node is"]
-   cn [label="the number of children a node has is"]
-   hnbb [label="a tree of height n and a branching factor b can have"]
-   nkcn [label="the number of key comparisons necessary to find a key in a binary search tree is"]
    fbt [label="a full binary tree"]
    cbt [label="a complete binary tree"]
    ht [label="huffman tree"]
-   compg [label="a complete graph is"]
-   cg [label="a cycle graph is one with n > 2 nodes where"]
+   compg [label="a complete graph"]
    ciag [label="a cycle in a graph is"]
-   wg [label="a wheel graph is created by"]
    idoan [label="in a directed graph, the in-degree of a node is"]
    odoan [label="in a directed graph, the out-degree of a node is"]
    don [label="in a graph, the degree of a node"]
-   anaca [label="adjacent, neighbors and connected are"]
-   ugr [label="undirected graphs represent"]
-   iammtol [label="in a multigraph, more than one link"]
-   iasg [label="in a simple graph, there cannot be"]
-   istcb [label="in pseudographs, there can be"]
-   idg [label="in directed graphs, the relation between nodes"]
-   idm [label="in directed multigraphs"]
-   ncg [label="n-cube graphs are defined"]
+   anaca [label="adjacent, neighbors and connected"]
+   dg [label="directed graphs"]
    iimgs [label="language"]
    a [label="alphabet"]
    soaa [label="string"]
    gh [label="how a godel hash is made"]
    soth [label="godel hash size"]
-   ghatfsupo [label="the way a godel hash accelerates testing for subsumptions under partial order is"] 
+   ghatfsupo [label="the way a godel hash accelerates testing for subsumptions under partial order"] 
+   
+   graphs
    
    1 [label="p"]
    2 [label="q"]
@@ -208,6 +196,8 @@
   ud -> eq
   
   pi -> im
+  pi -> inverse
+  im -> inverse
  
   function -> im
   function -> pi
@@ -216,6 +206,12 @@
   bt -> event
   
   ht -> trees
+  
+  graphs -> trees
+  
+  graphs -> dg
+  
+  graphs -> compg
   
   arity -> kary
   unary -> kary
@@ -255,5 +251,50 @@
   me -> crt
   me -> flt
   
+  br1 -> cp
+  br2 -> cp
+  
+  br1 -> relation
+  br2 -> relation
+  
   me -> 3
+  
+  ht -> rsap
+  
+  ugr -> symmetric
+  
+  relation -> function [/*label="subset of"*/]
+  xry -> relation
+
+  reflexive -> relation
+  transitive -> relation
+  
+  symmetric -> relation
+  antisymmetric -> relation
+  
+  ht -> gh
+  
+  reflexive -> er
+  transitive -> er
+  symmetric -> er
+  
+  ghatfsupo -> gh
+  
+  
+  er -> po [/*label="subset of"*/]
+  
+  dg -> ln
+  dg -> idoan 
+  dg -> odoan
+  
+  ciag -> br2
+  
+  anaca -> graphs
+  don -> graphs
+  
+  
+  cs -> relation
+  
+  ftoa -> cs
+  
  }
