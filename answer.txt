@@ -127,7 +127,10 @@
   surjective -> onto [dir=both /*label="synonyms"*/ len=2]
   surjection -> surjective [/*label="noun"*/ len=2]
    
-  injective -> oto [dir=both /*label="synonyms"*/ len=2]
+  injective -> oto [dir=both /*label="synonyms"*/ len=2] 
+    
+  bijective -> injective
+  bijective -> surjective 
 
   gh -> soth [/*label="reason for"*/ len=3]
   soaa -> a [/*label="subset"*/ len=3]
