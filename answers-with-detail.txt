@@ -1,0 +1,300 @@
+ digraph {
+     
+   /************************************************
+   *
+   *    settings - settings - settings
+   *
+   ************************************************/
+   
+   rankdir="lr"
+   splines=polyline
+   overlap=false
+   
+   /************************************************
+   *
+   *    nodes - nodes - nodes
+   *
+   ************************************************/
+ 
+   cs [label="countable set"]
+   relation
+   function
+   domain
+   codomain
+   range
+   onto
+   surjective
+   surjection
+   oto [label="one-to-one"]
+   injective
+   bijective
+   recursive
+   arguments
+   arity
+   kary [label="k-ary function"]
+   unary
+   binary
+   ternary
+   im [label="image"]
+   pi [label="pre-image"]
+   floor
+   ceiling
+   inverse
+   predicate
+   ud [label="universe of discourse"]
+   uq [label="universal quantifier"]
+   eq [label="existential quantifier"]
+   cp [label="cartesian product"]
+   br1 [label="a binary relation from a set a to a set b"]
+   br2 [label="a binary relation r on a set a (a self relation)"]
+   xry
+   reflexive
+   symmetric
+   antisymmetric
+   transitive
+   er [label="equivalence relation"]
+   cong [label="congruence mod m"]
+   po [label="partial order"]
+   permutation
+   combination
+   ps [label="probability space"]
+   event
+   cpfge [label="the conditional probability of f given e"]
+   bt [label="bayes' theorem"]
+   multichoosing
+   adb [label="a | b"]
+   tdt [label="the division theorem"]
+   ftoa [label="fundamental theorem of arithmetic"]
+   rle
+   gcd [label="greatest common divisor (gcd a b)"]
+   lcm [label="least common multiple (lcm a b)"]
+   coprime
+   crt [label="the chinese remainder theorem"]
+   rsap [label="the rsa cryptosystem's eight players"]
+   ifp [label="the difficulty of the integer factorization problem"]
+   d [label="rsa decryption (given n factors and e)"]
+   me [label="modular exponentiation"]
+   flt [label="fermat's little theorem"]
+   tf [label="totient function"]
+   ee [label="the encryption exponent"]
+   de [label="the decryption exponent"]
+   m [label="message to encrypt"]
+   tpp [label="totient of a prime p"]
+   cc [label="in a cons cell"]
+   trees
+   rt [label="a rooted tree is"]
+   leaf
+   ln [label="the level of a node is"]
+   fbt [label="a full binary tree"]
+   cbt [label="a complete binary tree"]
+   ht [label="huffman tree"]
+   compg [label="a complete graph"]
+   ciag [label="a cycle in a graph is"]
+   idoan [label="in a directed graph, the in-degree of a node is"]
+   odoan [label="in a directed graph, the out-degree of a node is"]
+   don [label="in a graph, the degree of a node"]
+   anaca [label="adjacent, neighbors and connected"]
+   dg [label="directed graphs"]
+   iimgs [label="language"]
+   a [label="alphabet"]
+   soaa [label="string"]
+   gh [label="how a godel hash is made"]
+   soth [label="godel hash size"]
+   ghatfsupo [label="the way a godel hash accelerates testing for subsumptions under partial order"] 
+   
+   graphs
+   
+   1 [label="p"]
+   2 [label="q"]
+   3 [label="n"]
+   4 [label="t"]
+   5 [label="e"]
+   6 [label="d"]
+   7 [label="m"]
+   8 [label="c"]
+   
+   /************************************************
+   *
+   *    connections - connections - connections
+   *
+   ************************************************/
+   
+  domain -> codomain [label="produces" len=2]
+  range -> codomain [label="subset of" len=2]
+  surjective -> range [label="true iff this eq codomain" len=2]
+  surjective -> codomain [label="true iff this eq range" len=2]
+  surjective -> onto [dir=both label="synonyms" len=2]
+  surjection -> surjective [label="noun" len=2]
+   
+  injective -> oto [dir=both label="synonyms" len=2]
+
+  gh -> soth [label="reason for" len=3]
+  soaa -> a [label="subset" len=3]
+   
+  floor -> ceiling [dir=both label="integer rounding" len=2]
+   
+   
+  rsap -> 1
+  rsap -> 2
+  rsap -> 3
+  rsap -> 4
+  rsap -> 5
+  rsap -> 6
+  rsap -> 7
+  rsap -> 8
+  
+  rsap -> ifp
+  
+  function -> rsap
+   
+  function -> domain
+  function -> range
+  function -> codomain
+  function -> surjective
+  function -> injective
+  function -> bijective
+  
+  function -> kary
+  function -> recursive
+   
+  function -> arguments
+  function -> predicate
+  
+  predicate -> ps
+
+  7 -> m
+ 
+  6 -> de
+  
+  5 -> ee
+  
+  6 -> d
+  
+  d -> 1
+  
+  d -> 2
+  
+  d -> 5
+  
+  trees -> leaf
+  rt -> trees
+ 
+  cong -> 6
+  
+  tpp -> 1
+  tpp -> 2
+  
+  gcd -> lcm
+  
+  ps -> event
+  
+  tf -> 4
+  
+  cpfge -> bt
+  
+  ud -> uq
+  ud -> eq
+  
+  pi -> im
+  pi -> inverse
+  im -> inverse
+ 
+  function -> im
+  function -> pi
+  function -> reflexive
+  
+  bt -> event
+  
+  ht -> trees
+  
+  graphs -> trees
+  
+  graphs -> dg
+  
+  graphs -> compg
+  
+  arity -> kary
+  unary -> kary
+  binary -> kary
+  ternary -> kary
+  
+  crt -> tdt
+  
+  adb -> tdt
+  adb -> gcd
+  
+  floor -> tdt
+  ceiling -> tdt
+  
+  cc -> fbt
+  cc -> cbt
+  fbt -> cbt [dir=both]
+  
+  ud -> ps
+  
+  permutation -> combination [dir=both]
+  permutation -> ps
+  combination -> ps
+  multichoosing -> ps
+  
+  5 -> coprime
+  4 -> coprime
+  
+  rle -> ht
+  
+  ht -> soaa
+  
+  a -> iimgs
+  
+  cc -> ht
+  
+  me -> crt
+  me -> flt
+  
+  br1 -> cp [label="is a"]
+  br2 -> cp [label="is a"]
+  
+  br1 -> relation
+  br2 -> relation
+  
+  me -> 3
+  
+  ht -> rsap
+  
+  ugr -> symmetric
+  
+  relation -> function [label="subset of"]
+  xry -> relation
+
+  reflexive -> relation
+  transitive -> relation
+  
+  symmetric -> relation
+  antisymmetric -> relation
+  
+  ht -> gh
+  
+  reflexive -> er
+  transitive -> er
+  symmetric -> er
+  
+  ghatfsupo -> gh
+  
+  
+  er -> po [label="subset of"]
+  
+  dg -> ln
+  dg -> idoan 
+  dg -> odoan
+  
+  ciag -> br2
+  
+  anaca -> graphs
+  don -> graphs
+  
+  
+  cs -> relation
+  
+  ftoa -> cs
+  
+ }
