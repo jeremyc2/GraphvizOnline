@@ -103,6 +103,7 @@
    ghatfsupo [label="the way a godel hash accelerates testing for subsumptions under partial order"] 
    
    graphs
+   ug [label="undirected-graphs"]
    
    1 [label="p"]
    2 [label="q"]
@@ -261,7 +262,7 @@
   
   ht -> rsap
   
-  ugr -> symmetric
+  ug -> symmetric
   
   relation -> function [/*label="subset of"*/]
   xry -> relation
