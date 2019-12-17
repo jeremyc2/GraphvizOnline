@@ -180,6 +180,8 @@
   
   d -> 5
   
+  cc -> trees
+  
   trees -> leaf
   rt -> trees
  
